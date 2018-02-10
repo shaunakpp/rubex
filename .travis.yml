@@ -10,8 +10,8 @@ script:
   - bundle exec rake spec
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libcsv
+  - sudo apt-get update -q
+  - sudo apt-get install -y libcsv3
   
 install:
   - gem install bundler
